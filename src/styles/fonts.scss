@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "ploni";
+  src: url("/fonts/ploni-regular.otf") format("opentype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ploni";
+  src: url("/fonts/ploni-medium.otf") format("opentype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ploni";
+  src: url("/fonts/ploni-demibold.otf") format("opentype");
+  font-weight: 600; /* DemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ploni";
+  src: url("/fonts/ploni-bold.otf") format("opentype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}

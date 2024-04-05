@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./fonts.scss";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  font-family: "ploni", sans-serif;
+  font-weight: 500;
+}
+
+img {
+  max-width: none !important;
+  height: auto !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.navigationMenuLink {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #262729;
+}
+
+.rbc-allday-cell {
+  display: none !important;
+}
+
+.rbc-time-view .rbc-header {
+  border-bottom: none !important;
+}
+
+.rbc-today {
+  background-color: transparent !important;
+}
+
+.rbc-time-gutter {
+  .rbc-timeslot-group:nth-child(4n + 1),
+  .rbc-timeslot-group:nth-child(4n + 2),
+  .rbc-timeslot-group:nth-child(4n + 3),
+  .rbc-timeslot-group:nth-child(4n + 4) {
+    font-weight: 100;
+    font-size: 10px !important;
+    color: #667085;
+    border-width: 0px;
+    min-width: 56.2422px;
+    padding-top: 4px;
+  }
+}
+
+.rbc-time-header {
+  .rbc-label {
+    border-bottom-width: 0px !important;
+  }
+}
+
+.rbc-date-cell {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.rbc-date-cell {
+  font-size: 0.7rem !important;
+}
+
+.rbc-off-range-bg {
+  background-color: transparent !important;
+}
+
+.rbc-date-cell.rbc-now .rbc-button-link {
+  background-color: #ffe300;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+.rbc-button-link,
+.rbc-date-cell button {
+  pointer-events: none;
+}
+
+.rbc-time-view .rbc-header {
+  font-size: 10px !important;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  font-weight: 700 !important;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.numbered {
+  list-style-type: decimal;
+}
+
+.non-ordered {
+  list-style-type: disc;
+}
+
+@keyframes simulateFlip {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0, 1);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+.simulate-flip-card {
+  animation: simulateFlip 0.6s forwards;
+}
+
+[data-slot="tabList"].flex {
+  gap: 0 !important;
+}
+
+atcb-reference {
+  display: none !important;
+}
