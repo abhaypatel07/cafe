@@ -63,7 +63,7 @@ const Profile = ({
     userData.then((user) => {
       setUserData(user)
     });
-  }, [])
+  }, [user])
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
